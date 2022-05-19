@@ -5,7 +5,11 @@
 #This script checks the current WAN IP address and optionally does further checks. 
 #Run using -d for all output, otherwise the default will be to only output for alerts. Exit code will be 0 for clean and 1 for alert.
 #Alerts can be easily configurd by using https://github.com/spmfox/systemd-alerts.
-#curl and whois utilities needed
+
+#Commands used:
+#curl
+#whois
+#host
 
 #Features:
 #Check for WAN IP change (main feature)
