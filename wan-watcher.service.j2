@@ -1,0 +1,7 @@
+[Unit]
+Description=WAN-Watcher
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash /opt/{{ ww_script_dir }}/wan-watcher.sh

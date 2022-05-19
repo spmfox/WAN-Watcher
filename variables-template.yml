@@ -1,5 +1,6 @@
 ---
 ww_temp_dir: /dev/shm
+ww_script_dir: /opt/wan-watcher
 ww_ip_check_url:
 ww_expected_dns_name:
 ww_dns_server:

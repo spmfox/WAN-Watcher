@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for wan-watcher.service
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=5m
+Unit=wan-watcher.service
+
+[Install]
+WantedBy=basic.target
