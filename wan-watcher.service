@@ -1,6 +1,7 @@
 [Unit]
 Description=WAN-Watcher
 After=network-online.target
+OnFailure=alert-notification@%i.service
 
 [Service]
 Type=oneshot
