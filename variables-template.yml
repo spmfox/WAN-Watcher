@@ -1,0 +1,9 @@
+---
+ww_temp_dir: /dev/shm
+ww_ip_check_url:
+ww_expected_dns_name:
+ww_dns_server:
+ww_exlected_org_name_grep:
+ww_dynamic_dns_curl:
+ww_dynamic_dns_provider_override:
+ww_alert_ip_file_missing:
