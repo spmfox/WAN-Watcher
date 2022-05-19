@@ -4,4 +4,4 @@ After=network-online.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/bash /opt/{{ ww_script_dir }}/wan-watcher.sh
+ExecStart=/usr/bin/bash {{ ww_script_dir }}/wan-watcher.sh
