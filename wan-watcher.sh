@@ -96,7 +96,7 @@ fi
 
 if [ -n "$ExpectedDNSname" ]; then
   output "DEBUG: Executing (nslookup $ExpectedDNSname $DNSserver) to check current DNS name."
-  CurrentDNSlookup=$(nslookup "$ExpectedDNSname" "$DNSserver" |grep "Address:" |grep -v '#53' |awk '{print $2}')
+  CurrentDNSlookup=$(host "$ExpectedDNSname" "$DNSserver" |grep "address" |awk -F "address" '{print $2}' |xargs)
   if [ "$CurrentIP" == "$CurrentDNSlookup" ]; then
     output "DEBUG: Expected DNS name ($ExpectedDNSname)($CurrentDNSlookup) resolves to current IP ($CurrentIP)."
   else
